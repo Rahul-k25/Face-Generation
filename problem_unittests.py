@@ -17,7 +17,7 @@ class _TestNN(torch.nn.Module):
 
 
 def _print_success_message():
-    print('Tests Passed')
+    print('Tests Passed,Congrats !!')
 
 
 class AssertTest(object):
@@ -89,7 +89,7 @@ def test_create_lookup_tables(create_lookup_tables):
     
     _print_success_message()
 
-
+#tokenizing the word so that It's easy to machine to read 
 def test_tokenize(token_lookup):
     symbols = set(['.', ',', '"', ';', '!', '?', '(', ')', '-', '\n'])
     token_dict = token_lookup()
